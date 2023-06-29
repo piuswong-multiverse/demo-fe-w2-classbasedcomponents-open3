@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Photo } from './components/Photo'
 class App extends React.Component {
     constructor() {
         super();
@@ -19,6 +19,7 @@ class App extends React.Component {
         return(
             <div>
                 quote here: { this.state.quote }
+                <Photo imgUrl="https://picsum.photos/200/300" />
             </div>
         )
     }
